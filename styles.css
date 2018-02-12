@@ -41,14 +41,14 @@ html, body {
   font-family: 'Raleway semi-bold';
   font-size: 4em;
   color: rgba(0, 0, 0, 0.8);
-  line-height: 1.3em;
+  line-height: 1.4em;
   pointer-events: none;
 }
 .article, .first-paragraph, .example {
   font-family: 'Raleway regular';
   font-size: 2em;
   color: rgba(0, 0, 0, 0.85);
-  line-height: 1.5em;
+  line-height: 1.75em;
   margin-top: 30px;
   pointer-events: none;
 }
