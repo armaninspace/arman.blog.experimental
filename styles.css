@@ -13,11 +13,9 @@ html, body {
  margin: 0;
  padding: 0;
 }
-
 .header-container {
   padding: 60px
 }
-
 .header-titles {
   font-family: 'Raleway regular';
   font-size: 1.5em;
@@ -44,13 +42,18 @@ html, body {
   font-size: 4em;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.3em;
+  pointer-events: none;
 }
-.article, .example {
+.article, .first-paragraph, .example {
   font-family: 'Raleway regular';
   font-size: 2em;
   color: rgba(0, 0, 0, 0.85);
   line-height: 1.5em;
   margin-top: 30px;
+  pointer-events: none;
+}
+.first-paragraph {
+  margin-top: 45px;
 }
 .example-wrapper {
   background-color: rgba(241, 241, 241, 0.6);
@@ -64,3 +67,11 @@ html, body {
   font-size: 1.8em;
 }
 
+#footer {
+ margin-top: 50px;
+}
+.arrow-up {
+ margin-top: 20px;
+ opacity: 0.6;
+ cursor: pointer;
+}

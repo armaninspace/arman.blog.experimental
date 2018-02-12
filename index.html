@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="generator" content="Hugo 0.32.4">
   <title>Notes on the Negative binomial distribution</title>
   <link rel="shortcut icon" href="https://www.shareicon.net/data/128x128/2016/03/03/728358_writing_512x512.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
@@ -26,8 +25,8 @@
  <div class="container container-wrapper">
    <div class="row justify-content-center">
     <div class="col">
-     <h1 class="heading-wrapper text-left">Notes on the Negative binomial distribution</h1>
-     <p class="article text-left">
+     <h1 class="heading-wrapper text-center">Notes on the Negative binomial distribution</h1>
+     <p class="article first-paragraph text-left">
       A generalization of a geometric distribution. Negative binomial distribution describes the number of successes in a sequence of independent experiments performed until the
 
 r−th failure. Formally, let
@@ -64,7 +63,7 @@ Probability mass function:
   </p>
 </div>
 </div>
-  <h3>Derivation</h3>
+  <h2 class="text-center" style="padding: 10px;">Derivation</h2>
   <p class="article text-left">
     The event
    X=k means that when the
@@ -111,7 +110,7 @@ M ( t ) = ( 1 − p ) r ( 1 − p e t ) r , t < ln 1 p
 </p>
 </div>
 </div>
-<h3>Proof</h3>
+<h2 class="text-center" style="padding: 10px;">Proof</h2>
   <p class="article text-left">
    M(t)=EetX=
 <br>
@@ -141,7 +140,7 @@ EX=pr1−p</p>
 
 <p class="article text-left">Variance:<br>
 V(X)=pr(1−p)2</p>
-<h3>Derivation</h3>
+<h2 class="text-center" style="padding: 10px;">Derivation</h2>
 <p class="article text-left">Expectation is the first derivative
 M′(0). We have:</p>
 <div class="container example-container">
@@ -171,10 +170,17 @@ M″(t)=rp(1−p)ret(1−pet)r+1+r(r+1)p2(1−p)re2t(1−pet)r+2
 </div>
    </div>
    </div>
+   <div class="row justify-content-center">
+   <img src="Arrow-Up-icon.png" class="arrow-up">
  </div>
+ </div>
+ <footer id="footer">
+   <img src="footer1.png">
+ </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
   crossorigin="anonymous">
 </script>
+<script src="scrollToView.js"></script>
 </html>
