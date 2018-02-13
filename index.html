@@ -14,12 +14,23 @@
    <div class="row justify-content-between align-items-center no-gutters header-row">
      <div class="header-titles">About</div>
      <div class="header-titles">GitHub</div>
-     <!--<div class="header-titles">LikedIn</div>-->
+     <div class="header-titles">LikedIn</div>
      <img src="A logo.svg" class="A-logo">
      <div class="header-titles push-1">Random</div>
      <div class="header-titles">Twitter</div>
-   </div>
- </div>
+     <div class="dropdown">
+      <div class="dots dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <div class="dot"></div>
+       <div class="dot"></div>
+       <div class="dot"></div>
+    </div>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item dropdown-child">Hello</a></li>
+        <li><a class="dropdown-item dropdown-child">Hello</a></li>
+        <li><a class="dropdown-item dropdown-child">Hello</a></li>
+      </div>
+    </div>
+  </div>
  </header>
  <!--Wrapper-->
  <div class="container container-wrapper">
@@ -28,13 +39,12 @@
      <h1 class="heading-wrapper text-center">Notes on the Negative binomial distribution</h1>
      <p class="article first-paragraph text-left">
       A generalization of a geometric distribution. Negative binomial distribution describes the number of successes in a sequence of independent experiments performed until the
-
-r−th failure. Formally, let
-ξ1,ξ2,… are results of experiments (that is all
-ξ are independent and have Bernoulli distribution).
-Sn=ξ1+…+ξn is the cumulative sum of
-ξ′s that represents the number of successes. The fact that there were r failures can be written as Sn=n−r.
-So, the negative binomial random variables is </p>
+      r−th failure. Formally, let
+      ξ1,ξ2,… are results of experiments (that is all
+      ξ are independent and have Bernoulli distribution).
+      Sn=ξ1+…+ξn is the cumulative sum of
+      ξ′s that represents the number of successes. The fact that there were r failures can be written as Sn=n−r.
+      So, the negative binomial random variables is </p>
 <div class="container example-container">
 <div class="example-wrapper row justify-content-center">
   <p class="example">
@@ -63,7 +73,7 @@ Probability mass function:
   </p>
 </div>
 </div>
-  <h2 class="text-center" style="padding: 10px;">Derivation</h2>
+  <h1 class="text-center" style="padding: 10px; font-size: 3.5em;">Derivation</h1>
   <p class="article text-left">
     The event
    X=k means that when the
@@ -110,7 +120,7 @@ M ( t ) = ( 1 − p ) r ( 1 − p e t ) r , t < ln 1 p
 </p>
 </div>
 </div>
-<h2 class="text-center" style="padding: 10px;">Proof</h2>
+<h1 class="text-center" style="padding: 10px; font-size: 3.5em;">Proof</h1>
   <p class="article text-left">
    M(t)=EetX=
 <br>
@@ -140,7 +150,7 @@ EX=pr1−p</p>
 
 <p class="article text-left">Variance:<br>
 V(X)=pr(1−p)2</p>
-<h2 class="text-center" style="padding: 10px;">Derivation</h2>
+<h1 class="text-center" style="padding: 10px; font-size: 3.5em;">Derivation</h1>
 <p class="article text-left">Expectation is the first derivative
 M′(0). We have:</p>
 <div class="container example-container">
@@ -183,4 +193,5 @@ M″(t)=rp(1−p)ret(1−pet)r+1+r(r+1)p2(1−p)re2t(1−pet)r+2
   crossorigin="anonymous">
 </script>
 <script src="scrollToView.js"></script>
+<script src="DotsMenuDropdown.js"></script>
 </html>

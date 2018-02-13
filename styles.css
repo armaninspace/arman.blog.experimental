@@ -16,6 +16,9 @@ html, body {
 .header-container {
   padding: 60px
 }
+.header-row {
+  width: 95%;
+}
 .header-titles {
   font-family: 'Raleway regular';
   font-size: 1.5em;
@@ -31,7 +34,7 @@ html, body {
   height: 36px;
 }
 .container-wrapper {
-  width: 50%;
+  width: 63%;
   padding: 45px;
   margin-top: 70px;
   background-color: rgba(221, 218, 214, 0.5);
@@ -39,7 +42,7 @@ html, body {
 }
 .heading-wrapper {
   font-family: 'Raleway semi-bold';
-  font-size: 4em;
+  font-size: 4.2em;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.4em;
   pointer-events: none;
@@ -74,4 +77,74 @@ html, body {
  margin-top: 20px;
  opacity: 0.6;
  cursor: pointer;
+}
+
+/*Dots menu*/
+
+.dot, .dot:before, .dot:after {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #3e27464d;
+  cursor: pointer;
+}
+
+.dot {
+  margin-top: -6px;
+  margin-left: 5px;
+}
+
+.dot:before, .dot:after {
+  content: "";
+}
+
+.dot:before {
+  right: 25px;
+  transition: right .6s ease-out;
+}
+
+.dot:after {
+  left: 25px;
+  transition: left .6s ease-out;
+}
+
+.dots:hover .dot:before {
+  right: -25px;
+  background-color: #3e27464d;
+}
+
+.dots:hover .dot:after {
+  left: -25px;
+  background-color: #3e27464d;
+}
+ /*Dots-Dropdown*/
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu {
+  width: 15vw;
+  background-color: rgba(231, 228, 225, 0.95);
+  border: 0.8px;
+  margin-top: 8px;
+}
+.dropdown-child {
+  padding: 25px;
+}
+.dropdown-menu > li > a {
+  text-align: center;
+  font-family: 'Raleway regular';
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dropdown-menu > li > a:hover {
+  background-color: transparent !important;
+}
+.dropdown-item {
+  cursor: pointer;
 }
