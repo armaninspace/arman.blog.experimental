@@ -16,9 +16,7 @@ html, body {
 .header-container {
   padding: 60px
 }
-.header-row {
-  width: 95%;
-}
+
 .header-titles {
   font-family: 'Raleway regular';
   font-size: 1.5em;
@@ -34,8 +32,7 @@ html, body {
   height: 36px;
 }
 .container-wrapper {
-  width: 63%;
-  padding: 45px;
+  padding: 65px;
   margin-top: 70px;
   background-color: rgba(221, 218, 214, 0.5);
   box-shadow: 4px 5.5px rgba(174, 156, 150, 0.25);
@@ -152,3 +149,11 @@ html, body {
 .dropdown-item {
   cursor: pointer;
 }
+ @media (max-device-width: 800px) {
+  .dots {
+    margin-left: 30px;
+  }
+  .header-container{
+    padding: 30px;
+  }
+ }
