@@ -72,6 +72,10 @@ html, body {
 
 #footer {
  margin-top: 50px;
+ text-align: center;
+}
+#footer embed {
+  max-width: 100%;
 }
 .arrow-up {
  margin-top: 20px;
