@@ -25,16 +25,21 @@ html, body {
   font-weight: 600;
   cursor: pointer;
 }
+.header-titles:hover {
+  color: rgba(0, 0, 0, 0.3);
+  transition: 1s;
+}
 .A-logo {
   pointer-events: none;
   width: 36px;
   height: 36px;
 }
 .container-wrapper {
-  padding: 65px;
+  padding: 50px;
   margin-top: 70px;
   background-color: rgba(221, 218, 214, 0.5);
   box-shadow: 4px 5.5px rgba(174, 156, 150, 0.25);
+
 }
 .heading-wrapper {
   font-family: 'Raleway semi-bold';
@@ -47,18 +52,21 @@ html, body {
   font-family: 'Raleway regular';
   font-size: 2em;
   color: rgba(0, 0, 0, 0.85);
-  line-height: 1.75em;
-  margin-top: 30px;
+  line-height: 1.55em;
+  margin-top: 10px;
   pointer-events: none;
 }
+.article  {
+  padding: 0 20px 0 20px;
+}
 .first-paragraph {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 .example-wrapper {
   background-color: rgba(241, 241, 241, 0.6);
-  padding: 25px;
-  margin-top: 25px;
-  margin-bottom: 20px;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .example {
   margin: 0;
@@ -146,6 +154,22 @@ html, body {
   background-color: transparent !important;
 }
 .dropdown-item {
+  cursor: pointer;
+}
+.ico {
+  width: 42px;
+  height: 42px;
+}
+.ico:hover {
+  transition: 0.5s;
+}
+.ico-fb {
+  width: 45px;
+  height: 45px;
+
+}
+.icon-wrap {
+  margin-top: 20px;
   cursor: pointer;
 }
  @media (max-device-width: 800px) {
