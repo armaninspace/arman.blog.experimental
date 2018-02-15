@@ -50,7 +50,7 @@ html, body {
 }
 .article, .first-paragraph, .example {
   font-family: 'Raleway regular';
-  font-size: 2em;
+  font-size: 1.9em;
   color: rgba(0, 0, 0, 0.85);
   line-height: 1.55em;
   margin-top: 10px;
