@@ -50,9 +50,9 @@ html, body {
 }
 .article, .first-paragraph, .example {
   font-family: 'Raleway regular';
-  font-size: 1.7em;
+  font-size: 1.9em;
   color: rgba(0, 0, 0, 0.85);
-  line-height: 1.65em;
+  line-height: 1.6em;
   margin-top: 10px;
   pointer-events: none;
 }
@@ -133,7 +133,7 @@ html, body {
 }
 
 .dropdown-menu {
-  width: 15vw;
+  width: 17vw;
   background-color: rgba(231, 228, 225, 0.95);
   border: 0.8px;
   margin-top: 8px;
@@ -168,9 +168,16 @@ html, body {
   height: 45px;
 
 }
-.icon-wrap {
+.icon-wrap, .tags {
   margin-top: 20px;
   cursor: pointer;
+}
+.tags {
+  font-family: 'Raleway regular';
+  font-size: 1.5em;
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.3em;
 }
  @media (max-device-width: 800px) {
   .dots {
@@ -178,5 +185,8 @@ html, body {
   }
   .header-container{
     padding: 30px;
+  }
+  .drodown-menu {
+
   }
  }
