@@ -43,7 +43,7 @@ html, body {
   letter-spacing: 0.25em;
   font-weight: 800;
   padding-top: 10px;
-  margin-left: 50px;
+  margin-left: 63px;
   pointer-events: none;
 }
 .container-wrapper {
@@ -106,21 +106,25 @@ html, body {
  opacity: 0.6;
  cursor: pointer;
 }
+.arrow:hover {
+  opacity: 0.48;
+  transition: 0.5s;
+}
 .arrow-text {
  font-family: 'Raleway regular';
  font-size: 1.55em;
  color: rgba(0, 0, 0, 0.5);
- letter-spacing: 0.2em;
- margin-left: 6px;
+ letter-spacing: 0.15em;
  cursor: pointer;
+ vertical-align: middle;
+}
+.arrow-text:active {
+  text-decoration: none;
 }
 .back-to-posts:hover {
  text-decoration: none;
 }
-span.arrow-text:hover {
- color: rgba(0, 0, 0, 0.35);
- transition: 1s;
-}
+
 /*Dots menu*/
 
 .dot, .dot:before, .dot:after {
@@ -202,7 +206,7 @@ span.arrow-text:hover {
   height: 45px;
 
 }
-.icon-wrap, .tags {
+.icon-wrap {
   margin-top: 20px;
   cursor: pointer;
 }
@@ -216,6 +220,7 @@ span.arrow-text:hover {
   color: rgba(0, 0, 0, 0.45);
   letter-spacing: 0.2em;
   margin: 20px 15px 0 0;
+  pointer-events: none;
 }
 
 /*Posts*/
@@ -238,6 +243,20 @@ span.arrow-text:hover {
  color: rgba(0, 0, 0, 0.4);
  transition: 1s;
 }
+.container-posts {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #f2f0ed;
+  z-index: 100;
+  position: relative;
+}
+
 
  @media (max-device-width: 800px) {
   .dots {
@@ -245,8 +264,14 @@ span.arrow-text:hover {
   }
   .header-container{
     padding: 30px;
+    padding-right: 60px;
   }
-  .drodown-menu {
-
+  .the-name {
+    margin-right: 25px;
+  }
+  .post-heading {
+    font-size: 2em;
+    letter-spacing: 0.08em;
   }
  }
+
