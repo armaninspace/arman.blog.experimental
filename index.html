@@ -10,7 +10,8 @@
 <body>
   <!--Header-->
 <div class="row justify-content-center no-gutters">
- <header id="header col">
+  <!--changing id attribute to calss attribute-->
+ <header class="header col">
   <div class="container header-container">
    <div class="row justify-content-between align-items-center no-gutters header-row">
      <div class="header-titles">About</div>
@@ -20,17 +21,18 @@
      <div class="header-titles push-1">Random</div>
      <div class="header-titles">Twitter</div>
      <div class="dropdown">
-      <div class="dots dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       <div class="dot"></div>
-       <div class="dot"></div>
-       <div class="dot"></div>
-    </div>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item dropdown-child">Hello</a></li>
-        <li><a class="dropdown-item dropdown-child">Hello</a></li>
-        <li><a class="dropdown-item dropdown-child">Hello</a></li>
-      </div>
-    </div>
+       <div class="dots dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+       </div>
+       <!--li tag inside div container not allowed changing parent container as ul-->
+       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+         <li><a class="dropdown-item dropdown-child">Hello</a></li>
+         <li><a class="dropdown-item dropdown-child">Hello</a></li>
+         <li><a class="dropdown-item dropdown-child">Hello</a></li>
+       </ul>
+     </div>
   </div>
   <div class="row justify-content-center">
   <div class="the-name">Arman Anwar</div>
@@ -66,8 +68,9 @@
       So, the negative binomial random variables is </p>
 <div class="example-container container col">
 <div class="example-wrapper row justify-content-center no-gutters">
+  <!--example math code-->
   <p class="example">
-X = S τ , τ = min { n ≥ 1 : S n = n − r }
+    $$X = S τ , τ = min { n ≥ 1 : S n = n − r }$$
 </p>
 </div>
 </div>
@@ -220,4 +223,14 @@ M″(t)=rp(1−p)ret(1−pet)r+1+r(r+1)p2(1−p)re2t(1−pet)r+2
 </script>
 <script src="scrollToView.js"></script>
 <script src="DotsMenuDropdown.js"></script>
+
+<!--mathjax configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!--mathjax configuration-->
+
 </html>
