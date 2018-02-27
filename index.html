@@ -57,7 +57,7 @@
 </div>
 </div>
      <h1 class="heading-wrapper text-center">Notes on the Negative binomial distribution</h1>
-     <p class="article first-paragraph text-left">
+     <p class="article first-paragraph text-center">
       A generalization of a geometric distribution. Negative binomial distribution describes the number of successes in a sequence of independent experiments performed until the
       r−th failure. Formally, let
       ξ1,ξ2,… are results of experiments (that is all
@@ -74,7 +74,7 @@
 </p>
 </div>
 </div>
-<p class="article text-left">
+<p class="article text-center">
   (here τ is the number of the last experiment, when
 r-th failure occured).
 
@@ -82,7 +82,7 @@ Parameters:
 r – number of failures after which we stop performing experiments,
 p – probability of a success in a single experiment.
 
-<br>Values:
+Values:
 {0,1,2,…}.
 <br>
 Probability mass function:
@@ -94,12 +94,12 @@ Probability mass function:
   </p>
 </div>
 </div>
-  <h1 class="text-center" style="padding: 7px; font-size: 3.5em;">Derivation</h1>
-  <p class="article text-left">
+  <h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Derivation</h1>
+  <p class="article text-center">
     The event
    X=k means that when the
   r−th failure occurd there were exactly
-  k successes. In particular it means that the process stoped at
+  k successes. <br>In particular it means that the process stoped at
   (k+r)-th experiment:
   </p>
   <div class="container example-container col">
@@ -109,7 +109,7 @@ P(X=k)=P(τ=k+r,Sk+r=k)=
 </p>
 </div>
 </div>
-<p class="article text-left">The last experiment is a failure:</p>
+<p class="article text-center">The last experiment is a failure:</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -117,7 +117,7 @@ P(X=k)=P(τ=k+r,Sk+r=k)=
 </p>
 </div>
 </div>
-<p class="article text-left">By independence:</p>
+<p class="article text-center">By independence:</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -125,7 +125,7 @@ P(X=k)=P(τ=k+r,Sk+r=k)=
 </p>
 </div>
 </div>
-<p class="article text-left">The sum has a binomial distribution:</p>
+<p class="article text-center">The sum has a binomial distribution:</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -133,7 +133,7 @@ P(X=k)=P(τ=k+r,Sk+r=k)=
 </p>
 </div>
 </div>
-<p class="article text-left">Moment generating function: </p>
+<p class="article text-center">Moment generating function: </p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -141,10 +141,9 @@ M ( t ) = ( 1 − p ) r ( 1 − p e t ) r , t < ln 1 p
 </p>
 </div>
 </div>
-<h1 class="text-center" style="padding: 7px; font-size: 3.5em;">Proof</h1>
-  <p class="article text-left">
+<h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Proof</h1>
+  <p class="article text-center">
    M(t)=EetX=
-<br>
 Using probability mass function:
 </p>
 <div class="container example-container col">
@@ -154,7 +153,7 @@ Using probability mass function:
 </p>
 </div>
 </div>
-<p class="article text-left">The sum is a Taylor expansion of
+<p class="article text-center">The sum is a Taylor expansion of
 1(1−x)r around
 0, evaluated at
 x=pet (condition on
@@ -166,13 +165,13 @@ t ensures convergence)</p>
 </p>
 </div>
 </div>
-<p class="article text-left">Expectation:
+<p class="article text-center">Expectation:
 EX=pr1−p.</p>
 
-<p class="article text-left">Variance:
+<p class="article text-center">Variance:
 V(X)=pr(1−p)2.</p>
-<h1 class="text-center" style="padding: 7px; font-size: 3.5em;">Derivation</h1>
-<p class="article text-left">Expectation is the first derivative
+<h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Derivation</h1>
+<p class="article text-center">Expectation is the first derivative
 M′(0). We have:</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
@@ -182,7 +181,7 @@ M′(t)=rp(1−p)ret(1−pet)r+1
   </p>
 </div>
 </div>
-<p class="article text-left">Second moment is the second derivative M″(0). We have: </p>
+<p class="article text-center">Second moment is the second derivative M″(0). We have: </p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -191,7 +190,7 @@ M″(t)=rp(1−p)ret(1−pet)r+1+r(r+1)p2(1−p)re2t(1−pet)r+2
   </p>
 </div>
 </div>
-<p class="article text-left">Variance is</p>
+<p class="article text-center">Variance is</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">

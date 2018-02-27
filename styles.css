@@ -1,5 +1,7 @@
-
-
+@font-face {
+  font-family: 'Raleway italics';
+  src: url(Fonts/Raleway-Italic.ttf) format('truetype');
+}
 @font-face {
 font-family: 'Raleway regular';
 src: url('Fonts/Raleway-Regular.ttf') format('truetype');
@@ -21,6 +23,7 @@ html, body {
 .header-titles {
   font-family: 'Raleway regular';
   font-size: 1.5em;
+
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.3em;
@@ -67,10 +70,12 @@ html, body {
   color: rgba(0, 0, 0, 0.85);
   line-height: 1.6em;
   margin-top: 10px;
+  margin-bottom: 0;
   pointer-events: none;
 }
 .article  {
-  padding: 0 20px 0 20px;
+  padding: 20px;
+  padding-top: 0;
 }
 .first-paragraph {
   margin-top: 30px;
@@ -213,7 +218,7 @@ html, body {
 .ico-in {
   margin-right: 10px;
 }
-.tags {
+.tags, .teaser-tags {
   font-family: 'Raleway regular';
   font-size: 1.4em;
   text-transform: lowercase;
@@ -235,8 +240,12 @@ html, body {
  letter-spacing: 0.1em;
  line-height: 1.8em;
  padding: 15px;
+ padding-left: 0;
  cursor: pointer;
  padding-top: 15px;
+}
+.post-link:active {
+
 }
 .post-link:hover {
  text-decoration: none;
@@ -256,8 +265,43 @@ html, body {
   z-index: 100;
   position: relative;
 }
-
-
+.teaser {
+  box-shadow: inset 1.5px 1.5px 1.5px 1.5px rgba(195,184,173,0.4);
+  padding: 0 0 0 15px;
+}
+.teaser-date {
+  font-family: 'Raleway italics';
+  font-size: 1.48em;
+  letter-spacing: 0.085em;
+  color: rgba(0, 0, 0, 0.43);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 10px 0 0;
+  pointer-events: none;
+ }
+.teaser-txt{
+  font-family: 'Raleway regular';
+  font-size: 1.35em;
+  letter-spacing: 0.085em;
+  color: rgba(0, 0, 0, 0.68);
+  line-height: 1.6em;
+  padding-top: 10px;
+  pointer-events: none;
+}
+.more {
+  font-family: 'Raleway semi-bold';
+  font-size: 1.05em;
+  letter-spacing: 0.085em;
+  color: rgba(123, 107, 126, 0.8);
+  cursor: pointer;
+ }
+ .more:hover {
+  color: rgba(123, 107, 126, 0.5);
+  transition: 0.3s;
+ }
+  .teaser-tags {
+   font-size: 1.2em;
+   margin: 0;
+  }
  @media (max-device-width: 800px) {
   .dots {
     margin-left: 30px;
