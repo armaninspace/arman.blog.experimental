@@ -89,9 +89,8 @@ html, body {
 .example {
   margin: 0;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
-
 #footer {
  margin-top: 50px;
  text-align: center;
@@ -105,8 +104,8 @@ html, body {
  cursor: pointer;
 }
 .arrow-back {
- width: 20px;
- height: 20px;
+ width: 17px;
+ height: 17px;
  transform: rotate(-90deg);
  opacity: 0.6;
  cursor: pointer;
@@ -117,7 +116,7 @@ html, body {
 }
 .arrow-text {
  font-family: 'Raleway regular';
- font-size: 1.55em;
+ font-size: 1.4em;
  color: rgba(0, 0, 0, 0.5);
  letter-spacing: 0.15em;
  cursor: pointer;
@@ -265,8 +264,7 @@ html, body {
   z-index: 100;
   position: relative;
 }
-.teaser {
-  box-shadow: inset 1.5px 1.5px 1.5px 1.5px rgba(195,184,173,0.4);
+.teaser{
   padding: 0 0 0 15px;
 }
 .teaser-date {
@@ -275,7 +273,7 @@ html, body {
   letter-spacing: 0.085em;
   color: rgba(0, 0, 0, 0.43);
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
-  padding: 10px 10px 0 0;
+  padding: 0 10px 0 0;
   pointer-events: none;
  }
 .teaser-txt{

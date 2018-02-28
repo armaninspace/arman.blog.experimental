@@ -59,164 +59,7 @@
 </div>
      <h1 class="heading-wrapper text-center">Notes on the Negative binomial distribution</h1>
      <p class="article first-paragraph text-center">
-      A generalization of a geometric distribution. Negative binomial distribution describes the number of successes in a sequence of independent experiments performed until the
-      r−th failure. Formally, let
-      ξ1,ξ2,… are results of experiments (that is all
-      ξ are independent and have Bernoulli distribution).
-      Sn=ξ1+…+ξn is the cumulative sum of
-      ξ′s that represents the number of successes. The fact that there were r failures can be written as
-      Sn=n−r.
-      So, the negative binomial random variables is </p>
-<div class="example-container container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <!--example math code-->
-  <p class="example">
-    $$X = S τ , τ = min { n ≥ 1 : S n = n − r }$$
-</p>
-</div>
-</div>
-<p class="article text-center">
-  (here τ is the number of the last experiment, when
-r-th failure occured).
-
-Parameters:
-r – number of failures after which we stop performing experiments,
-p – probability of a success in a single experiment.
-
-Values:
-{0,1,2,…}.
-<br>
-Probability mass function:
-</p>
-<div class="container example-container col">
-<div class="example-wrapper  row justify-content-center no-gutters">
-  <p class="example">
-    P ( X = k ) = ( k + r − 1 k ) p k ( 1 − p ) r , k ≥ 0.
-  </p>
-</div>
-</div>
-  <h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Derivation</h1>
-  <p class="article text-center">
-    The event
-   X=k means that when the
-  r−th failure occurd there were exactly
-  k successes. <br>In particular it means that the process stoped at
-  (k+r)-th experiment:
-  </p>
-  <div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-P(X=k)=P(τ=k+r,Sk+r=k)=
-</p>
-</div>
-</div>
-<p class="article text-center">The last experiment is a failure:</p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-=P(ξk+r=0,Sk+r−1=k)=
-</p>
-</div>
-</div>
-<p class="article text-center">By independence:</p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-=(1−p)P(Sk+r−1=k)=
-</p>
-</div>
-</div>
-<p class="article text-center">The sum has a binomial distribution:</p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-=(1−p)(k+r−1k)pk(1−p)(r−1)=(k+r−1k)pk(1−p)r.
-</p>
-</div>
-</div>
-<p class="article text-center">Moment generating function: </p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-M ( t ) = ( 1 − p ) r ( 1 − p e t ) r , t < ln 1 p
-</p>
-</div>
-</div>
-<h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Proof</h1>
-  <p class="article text-center">
-   M(t)=EetX=
-Using probability mass function:
-</p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-= ∞ ∑ k = 0 e t k ( k + r − 1 k ) p k ( 1 − p ) r = ( 1 − p ) r ∞ ∑ k = 0 ( k + r − 1 k ) ( p e t ) k =
-</p>
-</div>
-</div>
-<p class="article text-center">The sum is a Taylor expansion of
-1(1−x)r around
-0, evaluated at
-x=pet (condition on
-t ensures convergence)</p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-= ( 1 − p ) r ( 1 − p e t ) r
-</p>
-</div>
-</div>
-<p class="article text-center">Expectation:
-EX=pr1−p.</p>
-
-<p class="article text-center">Variance:
-V(X)=pr(1−p)2.</p>
-<h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Derivation</h1>
-<p class="article text-center">Expectation is the first derivative
-M′(0). We have:</p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-M′(t)=rp(1−p)ret(1−pet)r+1
- EX=M′(0)=pr1−p
-  </p>
-</div>
-</div>
-<p class="article text-center">Second moment is the second derivative M″(0). We have: </p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-M″(t)=rp(1−p)ret(1−pet)r+1+r(r+1)p2(1−p)re2t(1−pet)r+2
- EX2=pr1−p+r(r+1)p2(1−p)2
-  </p>
-</div>
-</div>
-<p class="article text-center">Variance is</p>
-<div class="container example-container col">
-<div class="example-wrapper row justify-content-center no-gutters">
-  <p class="example">
-   V ( X ) = p r 1 − p + r p 2 ( 1 − p ) 2 = p r ( 1 − p ) 2
-  </p>
-</div>
-</div>
-   </div>
-   <!--Lower container-->
-   <div class="container justify-content-center">
-  <div class="row align-items-center no-gutters">
-   <div class="arrow col-4 push-4 text-center"><img src="Arrow-Up-icon.png" class="arrow-up">
-        <div class="row justify-content-between align-items-end">
-          <div class="arrow" style="margin-left: 12px;">
-            <a href="posts.html" class="back-to-posts">
-              <img src="Arrow-Up-icon.png" class="arrow-back">
-              <span class="arrow-text d-inline">Posts</span>
-            </a>
-          </div>
-          <div class="tags">#tag #tag #tag</div>
-        </div>
-      </div>
-      <h1 class="heading-wrapper text-center">Notes on the Negative binomial distribution</h1>
-      <p class="article first-paragraph text-left">
-        A generalization of a geometric distribution. Negative binomial distribution describes the number of successes
+      A generalization of a geometric distribution. Negative binomial distribution describes the number of successes
         in a sequence of independent experiments performed until the
         \(r−\)th failure. Formally, let
         \(\xi_1,\xi_2,\ldots\) are results of experiments (that is all
@@ -225,158 +68,160 @@ M″(t)=rp(1−p)ret(1−pet)r+1+r(r+1)p2(1−p)re2t(1−pet)r+2
         \(\xi&#39;\)s that represents the number of successes. The fact that there were \(r\) failures can be written as
         \(S_n=n-r.\)
         So, the negative binomial random variables is </p>
-      <div class="example-container container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <!--example math code-->
-          <p class="example">
-            \[
-            X=S_\tau, \tau=\min\{n\geq 1:S_n=n-r\}
-            \]
-          </p>
-        </div>
-      </div>
-      <p class="article text-left">
-        (here \(\tau\) is the number of the last experiment, when \(r\)th failure occured).Parameters:
-        \(r\) number of failures after which we stop performing experiments,
-        \(p\) – probability of a success in a single experiment.
+<div class="example-container container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <!--example math code-->
+  <p class="example">
+    \[
+     X=S_\tau, \tau=\min\{n\geq 1:S_n=n-r\}
+    \]
+</p>
+</div>
+</div>
+<p class="article text-center">
+  (here \(\tau\) is the number of the last experiment, when \(r\)th failure occured).Parameters:
+  \(r\) number of failures after which we stop performing experiments,
+  \(p\) – probability of a success in a single experiment.
 
-        <br>Values:
-        \(\{0,1,2,\ldots\}.\)
-        <br>
-        Probability mass function:
-      </p>
-      <div class="container example-container col">
-        <div class="example-wrapper  row justify-content-center no-gutters">
-          <p class="example">
-            \[
-            P(X=k)={k+r-1\choose k}p^{k}(1-p)^r, \ k\geq 0.
-            \]
-          </p>
-        </div>
-      </div>
-      <h1 class="text-center" style="padding: 7px; font-size: 3.5em;">Derivation</h1>
-      <p class="article text-left">
-        The event
+Values:
+\(\{0,1,2,\ldots\}.\).
+<br>
+Probability mass function:
+</p>
+<div class="container example-container col">
+<div class="example-wrapper  row justify-content-center no-gutters">
+  <p class="example">
+    \[
+      P(X=k)={k+r-1\choose k}p^{k}(1-p)^r, \ k\geq 0.
+    \]
+  </p>
+</div>
+</div>
+  <h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Derivation</h1>
+  <p class="article text-center">
+    The event
         \(X=k\) means that when the
         \(r-\)th failure occurd there were exactly
         \(k\) successes. In particular it means that the process stoped at
         \((k+r)\)-th experiment:
-      </p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[
-            P(X=k)=P(\tau=k+r, S_{k+r}=k)=
-            \]
-          </p>
-        </div>
-      </div>
-      <p class="article text-left">The last experiment is a failure:</p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[
-            =P(\xi_{k+r}=0, S_{k+r-1}=k)=
-            \]
-          </p>
-        </div>
-      </div>
-      <p class="article text-left">By independence:</p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[=(1-p)P(S_{k+r-1}=k)=\]
-          </p>
-        </div>
-      </div>
-      <p class="article text-left">The sum has a binomial distribution:</p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[
-            =(1-p){k+r-1\choose k}p^{k}(1-p)^(r-1)={k+r-1\choose k}p^{k}(1-p)^r.
-            \]
-          </p>
-        </div>
-      </div>
-      <p class="article text-left">Moment generating function: </p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[
-            M(t)=\frac{(1-p)^r}{(1-pe^t)^r}, \ t&lt;
-            \ln\frac{1}{p}
-            \]
-          </p>
-        </div>
-      </div>
-      <h1 class="text-center" style="padding: 7px; font-size: 3.5em;">Proof</h1>
-      <p class="article text-left">
-        \(
-        M(t)=Ee^{tX}=
-        \)
-        <br>
-        Using probability mass function:
-      </p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">\[
-            =\sum^\infty_{k=0} e^{tk}{k+r-1\choose k}p^{k}(1-p)^r=(1-p)^r\sum^\infty_{k=0} {k+r-1\choose k}(pe^t)^{k}=
-            \]</p>
-        </div>
-      </div>
-      <p class="article text-left">The sum is a Taylor expansion of
+  </p>
+  <div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+  \[
+   P(X=k)=P(\tau=k+r, S_{k+r}=k)=
+  \]
+</p>
+</div>
+</div>
+<p class="article text-center">The last experiment is a failure:</p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+ \[
+    =P(\xi_{k+r}=0, S_{k+r-1}=k)=
+  \]
+</p>
+</div>
+</div>
+<p class="article text-center">By independence:</p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+\[=(1-p)P(S_{k+r-1}=k)=\]
+</p>
+</div>
+</div>
+<p class="article text-center">The sum has a binomial distribution:</p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+\[
+  =(1-p){k+r-1\choose k}p^{k}(1-p)^(r-1)={k+r-1\choose k}p^{k}(1-p)^r.
+\]
+</p>
+</div>
+</div>
+<p class="article text-center">Moment generating function: </p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+\[
+  M(t)=\frac{(1-p)^r}{(1-pe^t)^r}, \ t&lt;
+\ln\frac{1}{p}
+\]
+</p>
+</div>
+</div>
+<h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Proof</h1>
+  <p class="article text-center">
+    \(
+      M(t)=Ee^{tX}=
+    \)
+Using probability mass function:
+</p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+\[
+  =\sum^\infty_{k=0} e^{tk}{k+r-1\choose k}p^{k}(1-p)^r=(1-p)^r\sum^\infty_{k=0} {k+r-1\choose k}(pe^t)^{k}=
+\]
+</p>
+</div>
+</div>
+<p class="article text-center">The sum is a Taylor expansion of
+
         \(\frac{1}{(1-x)^r}\) around
         \(0,\) evaluated at
         \(x=pe^t\) (condition on
         \(t\) ensures convergence)</p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[
-            =\frac{(1-p)^r}{(1-pe^t)^r}
-            \]
-          </p>
-        </div>
-      </div>
-      <p class="article text-left">Expectation:
-        \(EX=\frac{pr}{1-p}\)</p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+\[
+ =\frac{(1-p)^r}{(1-pe^t)^r}
+\]
+</p>
+</div>
+</div>
+<p class="article text-center">Expectation:
+\(EX=\frac{pr}{1-p}\)</p>
 
-      <p class="article text-left">Variance:
-        \(V(X)=\frac{pr}{(1-p)^2}\)</p>
-      <h1 class="text-center" style="padding: 7px; font-size: 3.5em;">Derivation</h1>
-      <p class="article text-left">Expectation is the first derivative
-        \(M&#39;(0).\) We have</p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[
-            M&#39;(t)=r\frac{p(1-p)^re^t}{(1-pe^t)^{r+1}}
-            \]
-            \[
-            EX=M&#39;(0)=\frac{pr}{1-p}
-            \]
-          </p>
-        </div>
-      </div>
-      <p class="article text-left">Second moment is the second derivative \(M&#39;&#39;(0).\). We have: </p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[M&#39;&#39;(t)=r\frac{p(1-p)^re^t}{(1-pe^t)^{r+1}}+r(r+1)\frac{p^2(1-p)^re^{2t}}{(1-pe^t)^{r+2}}\]
-            \[EX^2=\frac{pr}{1-p}+\frac{r(r+1)p^2}{(1-p)^2}\]
-          </p>
-        </div>
-      </div>
-      <p class="article text-left">Variance is</p>
-      <div class="container example-container col">
-        <div class="example-wrapper row justify-content-center no-gutters">
-          <p class="example">
-            \[V(X)=\frac{pr}{1-p}+\frac{rp^2}{(1-p)^2}=\frac{pr}{(1-p)^2}\]
-          </p>
-        </div>
-      </div>
-    </div>
+<p class="article text-center">Variance:
+\(V(X)=\frac{pr}{(1-p)^2}\)</p>
+<h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Derivation</h1>
+<p class="article text-center">Expectation is the first derivative
+\(M&#39;(0).\). We have:</p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+\[
+ M&#39;(t)=r\frac{p(1-p)^re^t}{(1-pe^t)^{r+1}}
+\]
+\[
+ EX=M&#39;(0)=\frac{pr}{1-p}
+\]
+  </p>
+</div>
+</div>
+<p class="article text-center">Second moment is the second derivative \(M&#39;&#39;(0).\). We have: </p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+\[M&#39;&#39;(t)=r\frac{p(1-p)^re^t}{(1-pe^t)^{r+1}}+r(r+1)\frac{p^2(1-p)^re^{2t}}{(1-pe^t)^{r+2}}\]
+\[EX^2=\frac{pr}{1-p}+\frac{r(r+1)p^2}{(1-p)^2}\]
+  </p>
+</div>
+</div>
+<p class="article text-center">Variance is</p>
+<div class="container example-container col">
+<div class="example-wrapper row justify-content-center no-gutters">
+  <p class="example">
+   \[V(X)=\frac{pr}{1-p}+\frac{rp^2}{(1-p)^2}=\frac{pr}{(1-p)^2}\]
+  </p>
+</div>
+</div>
+   </div>
     <!--Lower container-->
     <div class="container justify-content-center">
       <div class="row align-items-center no-gutters">
@@ -399,10 +244,6 @@ M″(t)=rp(1−p)ret(1−pet)r+1+r(r+1)p2(1−p)re2t(1−pet)r+2
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous">
 </script>
-<script src="scrollToView.js"></script>
-<script src="DotsMenuDropdown.js"></script>
-
-<!--mathjax configuration-->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -411,6 +252,9 @@ M″(t)=rp(1−p)ret(1−pet)r+1+r(r+1)p2(1−p)re2t(1−pet)r+2
 </script>
 <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script src="scrollToView.js"></script>
+<script src="DotsMenuDropdown.js"></script>
+
 <!--mathjax configuration-->
 
 </html>
