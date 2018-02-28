@@ -232,6 +232,7 @@ html, body {
 .posts-list {
  list-style-type: none;
  padding: 45px;
+ padding-bottom: 10px;
 }
 .post-heading {
  font-size: 2.5em;
@@ -308,93 +309,38 @@ button {
   border: 0;
   outline: 0;
 }
-
+.arrow-right {
+  width: 16px;
+  height: 16px;
+  transform: rotate(90deg);
+  color: rgba(0, 0, 0, 0.58);
+}
+.arrow-left {
+  width: 16px;
+  height: 16px;
+  transform: rotate(-90deg);
+  color: rgba(0, 0, 0, 0.58);
+}
 .paginate {
-  margin: 10px;
-  width: 25px;
-  height: 25px;
   cursor: pointer;
   transform: translate3d(0, 0, 0);
-  -webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.2));
 }
 .paginate i {
   width: 20px;
   height: 5px;
-  border-radius: 2.5px;
   background: #000;
   transition: all 0.15s ease;
 }
-.paginate.left {
 
-}
 .paginate.left i {
   transform-origin: 0% 50%;
 }
-.paginate.left i:first-child {
-  transform: translate(0, -1px) rotate(40deg);
-}
-.paginate.left i:last-child {
-  transform: translate(0, 1px) rotate(-40deg);
-}
-.paginate.left:hover i:first-child {
-  transform: translate(0, -1px) rotate(30deg);
-}
-.paginate.left:hover i:last-child {
-  transform: translate(0, 1px) rotate(-30deg);
-}
-.paginate.left:active i:first-child {
-  transform: translate(1px, -1px) rotate(25deg);
-}
-.paginate.left:active i:last-child {
-  transform: translate(1px, 1px) rotate(-25deg);
-}
-.paginate.left[data-state="disabled"] i:first-child {
-  transform: translate(-5px, 0) rotate(0deg);
-}
-.paginate.left[data-state="disabled"] i:last-child {
-  transform: translate(-5px, 0) rotate(0deg);
-}
-.paginate.left[data-state="disabled"]:hover i:first-child {
-  transform: translate(-5px, 0) rotate(0deg);
-}
-.paginate.left[data-state="disabled"]:hover i:last-child {
-  transform: translate(-5px, 0) rotate(0deg);
-}
-.paginate.right {
 
-}
 .paginate.right i {
   transform-origin: 100% 50%;
 }
-.paginate.right i:first-child {
-  transform: translate(0, 1px) rotate(40deg);
-}
-.paginate.right i:last-child {
-  transform: translate(0, -1px) rotate(-40deg);
-}
-.paginate.right:hover i:first-child {
-  transform: translate(0, 1px) rotate(30deg);
-}
-.paginate.right:hover i:last-child {
-  transform: translate(0, -1px) rotate(-30deg);
-}
-.paginate.right:active i:first-child {
-  transform: translate(1px, 1px) rotate(25deg);
-}
-.paginate.right:active i:last-child {
-  transform: translate(1px, -1px) rotate(-25deg);
-}
-.paginate.right[data-state="disabled"] i:first-child {
-  transform: translate(5px, 0) rotate(0deg);
-}
-.paginate.right[data-state="disabled"] i:last-child {
-  transform: translate(5px, 0) rotate(0deg);
-}
-.paginate.right[data-state="disabled"]:hover i:first-child {
-  transform: translate(5px, 0) rotate(0deg);
-}
-.paginate.right[data-state="disabled"]:hover i:last-child {
-  transform: translate(5px, 0) rotate(0deg);
+.paginate:active {
+  border: 0;
 }
 .paginate[data-state="disabled"] {
   opacity: 0.3;
@@ -402,12 +348,15 @@ button {
 }
 
 .counter {
-  font-size: 1.7em;
+  text-align: center;
+  font-size: 1.6em;
   font-family: 'Raleway regular';
   color: rgba(0, 0, 0, 0.68);
 }
+
 .pagination-cont {
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 
