@@ -252,6 +252,9 @@ html, body {
  color: rgba(0, 0, 0, 0.4);
  transition: 1s;
 }
+.post-title{
+  padding: 5px 0 15px;
+}
 .container-posts {
   padding-bottom: 0;
   padding-top: 0;
