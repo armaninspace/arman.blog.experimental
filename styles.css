@@ -37,6 +37,7 @@ html, body {
   pointer-events: none;
   width: 36px;
   height: 36px;
+
 }
 .the-name {
   font-family: 'Raleway semi-bold';
@@ -71,6 +72,10 @@ html, body {
   margin-top: 10px;
   margin-bottom: 0;
   pointer-events: none;
+}
+.sub-heading {
+  padding: 20px;
+  font-size: 3.2em;
 }
 .article  {
   padding: 20px;
@@ -126,6 +131,9 @@ html, body {
 }
 .back-to-posts:hover {
  text-decoration: none;
+}
+.arrow-top-page {
+  margin-left: 12px;
 }
 
 /*Dots menu*/
@@ -251,7 +259,7 @@ html, body {
  color: rgba(0, 0, 0, 0.4);
  transition: 1s;
 }
-.post-title{
+.post-item{
   padding: 5px 0 15px;
 }
 .container-posts {
@@ -367,12 +375,45 @@ button:focus {
     padding: 30px;
     padding-right: 60px;
   }
+  .container-wrapper {
+    min-width: 800px;
+  }
   .the-name {
     margin-right: 25px;
   }
   .post-heading {
     font-size: 2em;
     letter-spacing: 0.08em;
+    line-height: 1.5em;
   }
+  .heading-wrapper {
+    font-size: 2.85em;
+  }
+  .sub-heading {
+    font-size: 2.55em;
+  }
+  .teaser-txt, .teaser-tags {
+    font-size: 2em;
+  }
+  .teaser-date {
+    font-size: 1.8em;
+  }
+  .arrow-right, .arrow-left {
+    width: 25px;
+    height: 25px;
+  }
+  .counter {
+  font-size: 2em;
+}
+.header-titles {
+  padding: 0 10px 0 10px;
  }
+.arrow-top-page {
+  margin: 0;
+ }
+.tags {
+  font-size: 1.7em;
+  margin-right: -5px;
+}
+
 
