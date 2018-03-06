@@ -10,7 +10,6 @@
 <body>
 <!--Header-->
 <div class="row justify-content-center no-gutters">
-  <!--changing id attribute to calss attribute-->
   <header class="header col">
     <div class="container header-container">
       <div class="row justify-content-between align-items-center no-gutters header-row">
@@ -27,7 +26,6 @@
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
-          <!--li tag inside div container not allowed changing parent container as ul-->
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item dropdown-child">Hello</a></li>
             <li><a class="dropdown-item dropdown-child">Hello</a></li>
@@ -57,8 +55,8 @@
   <div class="tags">#tag #tag #tag</div>
 </div>
 </div>
-     <h1 class="heading-wrapper text-center">Notes on the Negative binomial distribution</h1>
-     <p class="article first-paragraph text-center">
+     <h1 class="heading-wrapper text-left">Notes on the Negative binomial distribution</h1>
+     <p class="article first-paragraph text-left">
       A generalization of a geometric distribution. Negative binomial distribution describes the number of successes
         in a sequence of independent experiments performed until the
         \(r−\)th failure. Formally, let
@@ -78,7 +76,7 @@
 </p>
 </div>
 </div>
-<p class="article text-center">
+<p class="article text-left">
   (here \(\tau\) is the number of the last experiment, when \(r\)th failure occured).Parameters:
   \(r\) number of failures after which we stop performing experiments,
   \(p\) – probability of a success in a single experiment.
@@ -97,8 +95,8 @@ Probability mass function:
   </p>
 </div>
 </div>
-  <h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Derivation</h1>
-  <p class="article text-center">
+  <h1 class="text-left" style="padding: 20px; font-size: 3.2em;">Derivation</h1>
+  <p class="article text-left">
     The event
         \(X=k\) means that when the
         \(r-\)th failure occurd there were exactly
@@ -114,7 +112,7 @@ Probability mass function:
 </p>
 </div>
 </div>
-<p class="article text-center">The last experiment is a failure:</p>
+<p class="article text-left">The last experiment is a failure:</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -124,7 +122,7 @@ Probability mass function:
 </p>
 </div>
 </div>
-<p class="article text-center">By independence:</p>
+<p class="article text-left">By independence:</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -132,7 +130,7 @@ Probability mass function:
 </p>
 </div>
 </div>
-<p class="article text-center">The sum has a binomial distribution:</p>
+<p class="article text-left">The sum has a binomial distribution:</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -142,7 +140,7 @@ Probability mass function:
 </p>
 </div>
 </div>
-<p class="article text-center">Moment generating function: </p>
+<p class="article text-left">Moment generating function: </p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -153,8 +151,8 @@ Probability mass function:
 </p>
 </div>
 </div>
-<h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Proof</h1>
-  <p class="article text-center">
+<h1 class="text-left" style="padding: 20px; font-size: 3.2em;">Proof</h1>
+  <p class="article text-left">
     \(
       M(t)=Ee^{tX}=
     \)
@@ -169,7 +167,7 @@ Using probability mass function:
 </p>
 </div>
 </div>
-<p class="article text-center">The sum is a Taylor expansion of
+<p class="article text-left">The sum is a Taylor expansion of
 
         \(\frac{1}{(1-x)^r}\) around
         \(0,\) evaluated at
@@ -184,13 +182,13 @@ Using probability mass function:
 </p>
 </div>
 </div>
-<p class="article text-center">Expectation:
+<p class="article text-left">Expectation:
 \(EX=\frac{pr}{1-p}\)</p>
 
-<p class="article text-center">Variance:
+<p class="article text-left">Variance:
 \(V(X)=\frac{pr}{(1-p)^2}\)</p>
-<h1 class="text-center" style="padding: 20px; font-size: 3.5em;">Derivation</h1>
-<p class="article text-center">Expectation is the first derivative
+<h1 class="text-left" style="padding: 20px; font-size: 3.2em;">Derivation</h1>
+<p class="article text-left">Expectation is the first derivative
 \(M&#39;(0).\). We have:</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
@@ -204,7 +202,7 @@ Using probability mass function:
   </p>
 </div>
 </div>
-<p class="article text-center">Second moment is the second derivative \(M&#39;&#39;(0).\). We have: </p>
+<p class="article text-left">Second moment is the second derivative \(M&#39;&#39;(0).\). We have: </p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
@@ -213,7 +211,7 @@ Using probability mass function:
   </p>
 </div>
 </div>
-<p class="article text-center">Variance is</p>
+<p class="article text-left">Variance is</p>
 <div class="container example-container col">
 <div class="example-wrapper row justify-content-center no-gutters">
   <p class="example">
