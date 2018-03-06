@@ -8,134 +8,174 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <!--Header-->
+<!--Header-->
 
- <div class="row justify-content-center no-gutters">
- <header id="header col">
-  <div class="container header-container">
-   <div class="row justify-content-between align-items-center no-gutters header-row">
-     <div class="header-titles">About</div>
-     <div class="header-titles">GitHub</div>
-     <div class="header-titles">LikedIn</div>
-     <img src="A logo.svg" class="A-logo">
-     <div class="header-titles push-1">Random</div>
-     <div class="header-titles">Twitter</div>
-     <div class="dropdown">
-      <div class="dots dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       <div class="dot"></div>
-       <div class="dot"></div>
-       <div class="dot"></div>
-    </div>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item dropdown-child">Hello</a></li>
-        <li><a class="dropdown-item dropdown-child">Hello</a></li>
-        <li><a class="dropdown-item dropdown-child">Hello</a></li>
+<div class="row justify-content-center no-gutters">
+  <!--changing id attribute to calss attribute-->
+  <header class="header col">
+    <div class="container header-container">
+      <div class="row justify-content-between align-items-center no-gutters header-row">
+        <div class="header-titles">About</div>
+        <div class="header-titles">GitHub</div>
+        <div class="header-titles">LikedIn</div>
+        <img src="A logo.svg" class="A-logo">
+        <div class="header-titles push-1">Random</div>
+        <div class="header-titles">Twitter</div>
+        <div class="dropdown">
+          <div class="dots dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <!--li tag inside div container not allowed changing parent container as ul-->
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item dropdown-child">Hello</a></li>
+            <li><a class="dropdown-item dropdown-child">Hello</a></li>
+            <li><a class="dropdown-item dropdown-child">Hello</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="the-name">Arman Anwar</div>
       </div>
     </div>
-  </div>
-  <div class="row justify-content-center">
-  <div class="the-name">Arman Anwar</div>
-</div>
-  </div>
- </header>
+  </header>
 </div>
 <!--Wrapper-->
 <div class="row justify-content-center no-gutters">
-    <div class="container container-wrapper container-posts col-md-8 col-xl-7">
-      <div class="row justify-content-center">
-  <div class="triangle align-items-start"></div></div>
+  <div class="container container-wrapper container-posts col-md-8 col-xl-7">
+    <div class="row justify-content-center">
+      <div class="triangle align-items-start"></div></div>
     <div class="posts-list text-left">
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Simple Example on a Decision Rules, Admissibility, etc.</li></a>
+      <!--wrap single list item into a cotainer-->
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Simple Example on a Decision Rules, Admissibility, etc</a>
+        </div>
         <div class="teaser row no-gutters">
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<a><span class="more">...read more</span></a></p>
-          <div class="teaser-tags">#tag #tag #tag</div>
           <span class="teaser-date">28.02.2018</span>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<a href="#"><span class="more">...read more</span></a></p>
+          <div class="teaser-tags">#tag #tag #tag</div>
+
         </div>
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Posterior Beta Distribition evolution</li>
-        </a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Posterior Beta Distribition evolution</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Notes on the Poisson distribution</li>
-        </a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Notes on the Poisson distribution</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
-        <div class="teaser"></div>
-        <a href="" class="post-link"><li class="heading-wrapper post-heading">Notes on the Negative binomial distribution</li></a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="" class="post-link heading-wrapper post-heading">Notes on the Negative binomial distribution</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
-        <div class="teaser"></div>
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Notes on the Multinomial distribution</li>
-        </a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Notes on the Multinomial distribution</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
-        <div class="teaser"></div>
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Notes on the Hypergeometric distribution</li></a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Notes on the Hypergeometric distribution</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
-        <div class="teaser"></div>
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Notes on the Geometric distribution</li>
-        </a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Notes on the Geometric distribution</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
-        <div class="teaser"></div>
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Notes on the Binomial distribution</li>
-        </a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Notes on the Binomial distribution</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
-        <div class="teaser"></div>
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Notes on the Bernoulli distribution</li>
-        </a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Notes on the Bernoulli distribution</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
-        <div class="teaser"></div>
-        <a href="#" class="post-link"><li class="heading-wrapper post-heading">Areas swept up by Spirals</li>
-        </a>
+      </div>
+
+      <div class="post-item">
+        <div class="post-title">
+          <a href="#" class="post-link heading-wrapper post-heading">Areas swept up by Spirals</a>
+        </div>
         <div class="teaser row no-gutters">
           <span class="teaser-date ">28.02.2018</span>
-          <p class="teaser-txt text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<span class="more">...read more</span></p>
+          <p class="teaser-txt text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<span class="more">...read more</span></p>
           <div class="teaser-tags">#tag #tag #tag</div>
         </div>
+      </div>
+
     </div>
     <div class="row justify-content-end pagination-cont">
-         <button class="paginate left"><img src="Arrow-Up-icon.png" class="arrow-left"><i></i><i></i></button>
-         <div class="counter"></div>
-         <button class="paginate right"><img src="Arrow-Up-icon.png" class="arrow-right"><i></i><i></i></button>
-        </div>
+      <button class="paginate left"><img src="Arrow-Up-icon.png" class="arrow-left"><i></i><i></i></button>
+      <div class="counter"></div>
+      <button class="paginate right"><img src="Arrow-Up-icon.png" class="arrow-right"><i></i><i></i></button>
+    </div>
   </div>
-  </div>
+</div>
 
 
 
 <footer id="footer">
-   <img src="footer1.png">
- </footer>
+  <img src="footer1.png">
+</footer>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-  crossorigin="anonymous">
+        crossorigin="anonymous">
 </script>
 <script src="Pagination.js"></script>
 <script src="DotsMenuDropdown.js"></script>
